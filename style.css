@@ -1,0 +1,19 @@
+#card {
+    justify-content: center;
+}
+
+#main-card {
+    margin-top: 25px;
+}
+
+#main-card ul li {
+    list-style: none;
+}
+
+#main-card ul {
+    text-align: justify;
+}
+
+.card-img-top {
+    margin-top: 1rem
+}
