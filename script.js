@@ -11,12 +11,12 @@ const getWeather = (city) => {
     fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=' + city, options)
     .then(response => response.json())
     .then((response) => {
-        const width = 500;
-        const height = 400;
+        const width = 550;
+        const height = 480;
         cityImage.src = `https://source.unsplash.com/random/${width}x${height}/?${city} city`
         cityImage.style.width = '550px';
         cityImage.style.height = '380px';
-        cityName.innerHTML = city
+        cityName.innerHTML = `${city}: ${response.feels_like}°C`;
         console.log(response)
         cloud_pct.innerHTML = response.cloud_pct
         temp.innerHTML = response.temp

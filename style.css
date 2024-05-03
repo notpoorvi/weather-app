@@ -4,6 +4,11 @@
 
 #main-card {
     margin-top: 25px;
+    opacity: 0.8;
+}
+
+#main-card h1{
+    opacity: 1;
 }
 
 #main-card ul li {
@@ -32,4 +37,11 @@
     position: relative;
     z-index: 1;
     color: white;
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
 }
