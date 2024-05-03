@@ -1,7 +1,7 @@
 # Weather App Website
 
 This web application provides current weather information for various locations using the Weather API by API Ninjas.
-[Link to access the application]([https://www.example.com](https://notpoorvi.github.io/weather-app/))
+[Link to access the application](https://notpoorvi.github.io/weather-app/)
 
 ## Features
 - View current weather conditions like temperature, humidity, and wind speed.
