@@ -17,7 +17,6 @@ const getWeather = (city) => {
         cityImage.style.width = '550px';
         cityImage.style.height = '380px';
         cityName.innerHTML = `${city}: ${response.feels_like}°C`;
-        console.log(response)
         cloud_pct.innerHTML = response.cloud_pct
         temp.innerHTML = response.temp
         feels_like.innerHTML = response.feels_like
