@@ -9,7 +9,7 @@ This web application provides current weather information for various locations 
 
 ## Usage
 1. **Clone the repository**:
-    `git clone https://github.com/yourusername/weather-app.git`
+    `git clone git@github.com:notpoorvi/weather-app.git`
 
 2. **Navigate to the project directory**:
     `cd weather-app`
