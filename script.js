@@ -14,6 +14,8 @@ const getWeather = (city) => {
         const width = 500;
         const height = 400;
         cityImage.src = `https://source.unsplash.com/random/${width}x${height}/?${city} city`
+        cityImage.style.width = '550px';
+        cityImage.style.height = '380px';
         cityName.innerHTML = city
         console.log(response)
         cloud_pct.innerHTML = response.cloud_pct
@@ -24,15 +26,19 @@ const getWeather = (city) => {
         max_temp.innerHTML = response.max_temp
         wind_speed.innerHTML = response.wind_speed
         wind_degrees.innerHTML = response.wind_degrees
-        sunrise.innerHTML = response.sunrise
-        sunset.innerHTML = response.sunset
+        // sunrise.innerHTML = response.sunrise
+        // sunset.innerHTML = response.sunset
     })
     .catch(err => console.error(err));
 }    
 
 submit.addEventListener("click", (e) => {
     e.preventDefault()
-    getWeather(city.value);
+    let cityName = city.value.trim();
+    if (cityName === '') {
+        cityName = 'Vancouver';
+    }
+    getWeather(cityName);
 })
 
 getWeather("Vancouver")
